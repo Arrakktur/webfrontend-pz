@@ -1,0 +1,11 @@
+<div class="chat">
+    <h1>{{ title }}</h1>
+    <div>Канал: общий</div>
+    <div class="textarea" name="" id="" cols="30" rows="10" readonly>
+        <span class="chat_lineMessage" *ngFor="let item of message">{{ item['text'] }}</span>
+    </div>
+    <div class="chat__containerInput">
+        <input type="text" class="chat__inputText" [class.chat__inputText_error]="errorText" [(ngModel)]="textMessage" placeholder="Текст сообщения">
+        <input type="button" class="chat__inputBtn btn btn-success" value="Отправить" (click)="postMessage()">
+    </div>
+</div>

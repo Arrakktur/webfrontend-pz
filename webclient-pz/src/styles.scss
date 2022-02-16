@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: .2s;
+}
+
+a, td, button{
+    color: #fff !important;
+}
+
+app-profile{
+    width: 50%;
+}
+
+.container{
+    background-image: url('./assets/image/bg_new.png');
+    min-height: 100vh;
+}

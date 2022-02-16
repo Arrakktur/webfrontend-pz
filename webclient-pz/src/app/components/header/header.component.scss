@@ -1,0 +1,26 @@
+.header__container{
+    margin-right: 30px;
+    border-right: 1px solid silver;
+}
+
+.header__element{
+    position: relative;
+    font-size: 19px;
+    cursor: pointer;
+
+    &:hover{
+       background-color: rgb(112, 60, 255);
+
+       .header__elementLink{
+           color: #fff;
+       }
+    }
+}
+
+.header__elementLink{
+    display: block;
+    height: 100%;
+    color:#000;
+    text-decoration: none;
+    padding: 15px;
+}

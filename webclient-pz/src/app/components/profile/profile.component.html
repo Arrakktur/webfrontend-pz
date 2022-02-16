@@ -1,0 +1,22 @@
+<div class="profile">
+    <h1>{{ title }}</h1>
+    <div class="profile__wrapper">
+        <div class="profile__infoWrapper">
+            <div class="profile__avatar">
+                <img src="./../../../assets/image/avatar.jpg" alt="">
+            </div>
+            <div class="profile__info">
+                <div class="profile__name">
+                    {{ name }}
+                </div>
+                <div class="profile__description">
+                    {{ description }}
+                </div>
+            </div>
+        </div>
+        <div class="profile__level">
+            <div class="profile__levelWrap"> Уровень: <span class="profile__levelNum">{{ level }}</span> </div>
+            <input type="button" value="Редактировать профиль" class="profile__input">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="server">
+    <h1>{{ title }}</h1>
+    <div class="server__info">
+        Активных серверов: {{ getServers().length }}
+    </div>
+    <div *ngFor="let server of getServers()" class="server__element">
+        <div class="server__elementName">
+            Название сервера: {{ server.name }}
+        </div>
+        <div class="server__elementStatus">
+            Состояние сервера: {{ server.status }}
+        </div>
+        <div class="server__elementControl">
+            <input type="button" class="server__elementInput btn btn-success" value="Запустить" [disabled]="getStage(server.name)" (click)="serverStart(server.name)">
+            <input type="button" class="server__elementInput btn btn-warning" value="Остановить" [disabled]="!getStage(server.name)" (click)="serverStop(server.name)">
+            <input type="button" class="server__elementInput btn btn-primary" value="Перезапустить" (click)="serverError()">
+            <input type="button" class="server__elementInput btn btn-danger" value="Удалить" (click)="serverError()">
+        </div>
+    </div>
+    <div class="server__control">
+        <input type="button" class="server__elementInput btn btn-secondary" value="Добавить" (click)="serverError()">
+    </div>
+</div>

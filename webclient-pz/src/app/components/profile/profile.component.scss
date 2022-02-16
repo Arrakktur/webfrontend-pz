@@ -1,0 +1,57 @@
+h1{
+    margin-bottom: 40px;
+}
+
+.profile{
+    width: 100%;
+}
+
+.profile__name{
+    font-size: 24px;
+}
+
+.profile__input{
+    padding: 5px;
+    background-color: rgb(14, 124, 187);
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+.profile__levelWrap{
+    display: flex;
+    align-items: center;
+}
+
+.profile__levelNum{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.profile__avatar{
+    width: 100px;
+    margin-right: 15px;
+}
+
+.profile__infoWrapper{
+    display: flex;
+}
+
+.profile__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid silver;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}

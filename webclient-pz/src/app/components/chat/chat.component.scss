@@ -1,0 +1,39 @@
+.chat__inputText{
+    height: auto;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid silver;
+
+    &::placeholder{
+        color: #fff;
+        opacity: 0.8;
+    }
+
+    &_error{
+        border-color: red;
+    }
+}
+
+.chat__inputBtn{
+    height: 100%;
+}
+
+.chat__containerInput{
+    display: flex;
+}
+
+.chat_lineMessage{
+    display: block;
+}
+
+.textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+    padding: 5px;
+    height: 400px;
+}
+
+.textarea, input[type="text"]{
+    background-color: transparent;
+}

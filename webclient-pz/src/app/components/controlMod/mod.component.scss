@@ -1,0 +1,26 @@
+.mod__checkbox{
+    margin-right: 5px;
+}
+
+h1{
+    margin-bottom: 25px;
+}
+
+.mod__button{
+    width: 100%;
+    color: #000;
+}
+
+.mod__tab{
+    color: #fff !important;
+
+    &.active{
+        color: #000 !important;
+    }
+}
+
+a{
+    &:hover{
+        color: silver !important;
+    }
+}

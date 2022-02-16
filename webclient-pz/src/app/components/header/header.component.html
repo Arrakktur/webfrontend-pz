@@ -1,0 +1,9 @@
+<header class="header">
+    <div class="header__container">
+        <nav class="header__navigation">
+            <div *ngFor="let elem of items" class="header__element">
+                <a href="{{ elem.link }}" class="header__elementLink">{{ elem.name }}</a>
+            </div>
+        </nav>
+    </div>
+</header>
